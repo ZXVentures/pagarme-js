@@ -167,7 +167,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  });
 	};
 	
-	var generateCardHashSha256 = function generateCardHashSha256(_ref3, cardString) {
+	var encryptCardNumber = function encryptCardNumber(_ref3, cardString) {
 	  var publicKey = _ref3.publicKey;
 	
 	  var key = new _nodeRsa2.default(publicKey, 'pkcs8-public', {
@@ -183,7 +183,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	exports.default = {
 	  encrypt: encrypt,
-	  generateCardHashSha256: generateCardHashSha256
+	  encryptCardNumber: encryptCardNumber
 	};
 	module.exports = exports['default'];
 
